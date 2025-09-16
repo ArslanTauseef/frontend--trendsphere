@@ -1,0 +1,6 @@
+.ts-header {
+    width: var(--containers-max-width);
+    height: var(--ts-header-height);
+    background-color: var(--primary-hd-color);
+    display: flex;
+}
