@@ -1,0 +1,13 @@
+:root {
+    /* 
+
+    link for color palette in case I forget or need to share:
+
+    https://www.canva.com/colors/color-palettes/pensive-mood/
+
+    */
+    --base-bg-color: #E5E8E8; /* White */
+    --primary-hd-color: #000401; /* Jet Black */
+    --secondary-subhd-color: #4E545C; /* Gun metal grey */
+    --tertiary-text-color: #8D9797; /* Pewter */
+}
