@@ -1,6 +1,43 @@
 .ts-header {
     width: var(--containers-max-width);
     height: var(--ts-header-height);
-    background-color: var(--primary-hd-color);
+    /* background-color: var(--primary-hd-color); */
     display: flex;
+    /* border: 1px solid var(--secondary-subhd-color); */
+    padding: 10px 0 10px 0;
 }
+
+
+.ts-header-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--secondary-subhd-color);
+    gap: 50px;
+    padding: 5px;
+}
+
+.ts-header-logo, .ts-header-menu, .ts-header-login {
+    border: 1px solid black;
+    height: 100%;
+    width: calc(100% / 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ts-header-menu {
+    flex-direction: row;
+    gap: 20px;
+}
+
+.ts-header-menu > div {
+
+    border: 1px solid red;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
