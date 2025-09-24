@@ -5,10 +5,6 @@ import "../header/header-css-files/HeaderMenu.css";
 import "../header/header-css-files/HeaderNav.css";
 import { FaBattleNet } from "react-icons/fa";
 
-
-
-
-
 export const Header = () => {
   return (
     <header className="ts-header">
@@ -25,6 +21,7 @@ export const Header = () => {
           </div>
         </section>
         <section className="ts-header-menu">
+          <div className="slider"></div>
           <div>Home</div>
           <div>About</div>
           <div>Contact</div>
