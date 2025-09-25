@@ -11,6 +11,7 @@
 .ts-header-menu {
     flex-direction: row;
     gap: 20px;
+    position: relative;
 }
 
 
@@ -19,4 +20,10 @@
     padding: 5px 10px 5px 10px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.ts-header-menu > .slider {
+    position: absolute;
+    left: 0;
+    top: 0;
 }

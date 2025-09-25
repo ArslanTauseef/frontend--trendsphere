@@ -1,11 +1,22 @@
-import "../header/header-css-files/Header.css";
-import "../header/header-css-files/HeaderLogin.css";
-import "../header/header-css-files/HeaderLogo.css";
-import "../header/header-css-files/HeaderMenu.css";
-import "../header/header-css-files/HeaderNav.css";
+import { useEffect } from "react";
+import "../header-css-files/Header.css";
+import "../header-css-files/HeaderLogin.css";
+import "../header-css-files/HeaderLogo.css";
+import "../header-css-files/HeaderMenu.css";
+import "../header-css-files/HeaderNav.css";
+
 import { FaBattleNet } from "react-icons/fa";
 
 export const Header = () => {
+  const HandleNavSlider = () => {
+    console.log("TESTING");
+    
+  };
+
+  useEffect(() => {
+    HandleNavSlider();
+  }, []);
+
   return (
     <header className="ts-header">
       <nav className="ts-header-nav">
