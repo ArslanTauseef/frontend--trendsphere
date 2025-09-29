@@ -1,5 +1,5 @@
 .ts-header-menu {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 100%;
     /* width: 33.33%; */
     display: flex;
@@ -14,7 +14,7 @@
 
 
 .ts-header-menu>.ts-menu {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     border-radius: 5px;
     cursor: pointer;
     display: flex;
@@ -24,9 +24,9 @@
 
 .slider {
     position: absolute;
-    bottom: 0;
+    bottom: 6px;
     left: 0;
-    height: 0.5px;
+    height: 2px;
     background: var(--secondary-subhd-color);
     transition: left 0.3s ease, width 0.3s ease;
 }

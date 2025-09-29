@@ -15,10 +15,27 @@ export const Header = () => {
     const target = navSecundus.current[index];
     const rectNavSecundus = target.getBoundingClientRect();
     setSliderStyle({
-      left: rectNavSecundus.left - navPrimus.current.getBoundingClientRect().left,
+      left:
+        rectNavSecundus.left - navPrimus.current.getBoundingClientRect().left,
       width: rectNavSecundus.width,
     });
   };
+
+  const setActive = (index) => {
+    const target = navSecundus.current[index];
+    if (!target) return;
+
+    const rect = target.getBoundingClientRect();
+    setSliderStyle({
+      left: rect.left - navPrimus.current.getBoundingClientRect().left,
+      width: rect.width,
+    });
+  };
+
+  useEffect(() => {
+    // set HOME active by default (index 0)
+    setActive(0);
+  }, []);
 
   useEffect(() => {
     console.log("navPrimus:", navPrimus.current); // whole <section>
