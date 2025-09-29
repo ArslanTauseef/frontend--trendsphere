@@ -8,10 +8,22 @@ import { FaBattleNet } from "react-icons/fa";
 
 export const Header = () => {
   const [sliderStyle, setSliderStyle] = useState({});
-  const menuRef = useRef(null);
-  const newRef = useRef();
+  const navPrimus = useRef(null);
+  const navSecundus = useRef([]);
 
+  const handleClick = (index) => {
+    const target = navSecundus.current[index];
+    const rectNavSecundus = target.getBoundingClientRect();
+    setSliderStyle({
+      left: rectNavSecundus.left - navPrimus.current.getBoundingClientRect().left,
+      width: rectNavSecundus.width,
+    });
+  };
 
+  useEffect(() => {
+    console.log("navPrimus:", navPrimus.current); // whole <section>
+    console.log("navSecundus:", navSecundus.current); // array of divs
+  }, []);
   return (
     <header className="ts-header">
       <nav className="ts-header-nav">
@@ -27,13 +39,18 @@ export const Header = () => {
           </div>
         </section>
 
-        <section className="ts-header-menu" ref={menuRef}>
+        <section className="ts-header-menu" ref={navPrimus}>
           {["HOME", "CONTACT", "ABOUT"].map((item, index) => {
             return (
-              <div className="ts-menu" key={index}>
+              <div
+                className="ts-menu"
+                key={index}
+                ref={(el) => (navSecundus.current[index] = el)}
+                onClick={() => handleClick(index)}
+              >
                 {item}
               </div>
-            )
+            );
           })}
           <div className="slider" style={sliderStyle}></div>
         </section>
