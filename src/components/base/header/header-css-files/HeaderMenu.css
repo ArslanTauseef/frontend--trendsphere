@@ -1,33 +1,28 @@
 .ts-header-menu {
-    border: 1px solid black;
-    height: 100%;
-    width: 33.33%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-}
-
-.ts-header-menu {
-    flex-direction: row;
-    gap: 20px;
-    position: relative;
+  border: 1px solid black;
+  height: 100%;
+  width: 33.33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: relative; /* important for slider positioning */
 }
 
 
-/* .ts-header-menu>div {
+
+
+.ts-header-menu>div {
     border: 1px solid red;
     padding: 5px 10px 5px 10px;
     border-radius: 5px;
     cursor: pointer;
-} */
+}
 
-.ts-header-menu::after {
-    content: "";
+.slider {
     position: absolute;
-    left: 0;
     bottom: 0;
-    width: 24px;
     height: 2px;
     background: red;
+    transition: left 0.3s ease, width 0.3s ease;
 }
