@@ -12,17 +12,20 @@
 
 
 
-.ts-header-menu>div {
+.ts-header-menu> .ts-menu {
     border: 1px solid red;
-    padding: 5px 10px 5px 10px;
     border-radius: 5px;
     cursor: pointer;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .slider {
     position: absolute;
     bottom: 0;
-    height: 2px;
-    background: red;
+    height: 0.5px;
+    background: var(--secondary-subhd-color);
     transition: left 0.3s ease, width 0.3s ease;
 }

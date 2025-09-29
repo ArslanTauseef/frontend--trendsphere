@@ -9,32 +9,8 @@ import { FaBattleNet } from "react-icons/fa";
 export const Header = () => {
   const [sliderStyle, setSliderStyle] = useState({});
   const menuRef = useRef(null);
+  const newRef = useRef();
 
-  const handleClick = (e) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    const containerRect = menuRef.current.getBoundingClientRect();
-
-    const newStyle = {
-      left: rect.left - containerRect.left + "px",
-      width: rect.width + "px",
-    };
-
-    setSliderStyle(newStyle);
-  };
-
-  useLayoutEffect(() => {
-    if (menuRef.current) {
-      const firstItem = menuRef.current.querySelector(".ts-menu");
-      if (firstItem) {
-        const rect = firstItem.getBoundingClientRect();
-        const containerRect = menuRef.current.getBoundingClientRect();
-        setSliderStyle({
-          left: rect.left - containerRect.left + "px",
-          width: rect.width + "px",
-        });
-      }
-    }
-  }, []);
 
   return (
     <header className="ts-header">
@@ -52,15 +28,13 @@ export const Header = () => {
         </section>
 
         <section className="ts-header-menu" ref={menuRef}>
-          <div onClick={handleClick} className="ts-menu">
-            Home
-          </div>
-          <div onClick={handleClick} className="ts-menu">
-            About
-          </div>
-          <div onClick={handleClick} className="ts-menu">
-            Contact
-          </div>
+          {["HOME", "CONTACT", "ABOUT"].map((item, index) => {
+            return (
+              <div className="ts-menu" key={index}>
+                {item}
+              </div>
+            )
+          })}
           <div className="slider" style={sliderStyle}></div>
         </section>
 
