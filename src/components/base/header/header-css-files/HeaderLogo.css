@@ -32,12 +32,14 @@
     font-size: clamp(10px, 1.6vw, 30px);
     color: var(--primary-hd-color);
     font-family: "SUSE Mono", sans-serif;
+    font-weight: 200;
 }
 
 #ts-header-logo-text>h1:nth-of-type(2) {
     font-size: clamp(10px, 1.6vw, 30px);
     font-family: "SUSE Mono", sans-serif;
-    color: var(--secondary-subhd-color);
+    color: var(--primary-hd-color);
+    font-weight: 500;
 }
 
 #ts-header-logo-icon {

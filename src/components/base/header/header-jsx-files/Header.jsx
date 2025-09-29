@@ -5,6 +5,7 @@ import "../header-css-files/HeaderLogo.css";
 import "../header-css-files/HeaderMenu.css";
 import "../header-css-files/HeaderNav.css";
 import { FaBattleNet } from "react-icons/fa";
+import { IoLogoSlack } from "react-icons/io5";
 
 export const Header = () => {
   const [sliderStyle, setSliderStyle] = useState({});
@@ -46,7 +47,7 @@ export const Header = () => {
       <nav className="ts-header-nav">
         <section className="ts-header-logo">
           <div className="ts-header-logo-wrapper">
-            <FaBattleNet id="ts-header-logo-icon" />
+            <IoLogoSlack id="ts-header-logo-icon" />
             <div id="ts-header-logo-text-wrapper">
               <div id="ts-header-logo-text">
                 <h1>TREND</h1>
