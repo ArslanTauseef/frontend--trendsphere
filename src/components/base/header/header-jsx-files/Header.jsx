@@ -54,7 +54,7 @@ export const Header = () => {
             </div>
           </div>
         </section>
-
+        {/* // Menu Section */}
         <section className="ts-header-menu" ref={navPrimus}>
           {["HOME", "CONTACT", "ABOUT"].map((item, index) => {
             return (
