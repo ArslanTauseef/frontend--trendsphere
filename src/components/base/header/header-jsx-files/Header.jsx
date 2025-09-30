@@ -4,7 +4,6 @@ import "../header-css-files/HeaderLogin.css";
 import "../header-css-files/HeaderLogo.css";
 import "../header-css-files/HeaderMenu.css";
 import "../header-css-files/HeaderNav.css";
-import { FaBattleNet } from "react-icons/fa";
 import { IoLogoSlack } from "react-icons/io5";
 
 export const Header = () => {
@@ -34,7 +33,6 @@ export const Header = () => {
   };
 
   useEffect(() => {
-    // set HOME active by default (index 0)
     setActive(0);
   }, []);
 
