@@ -1,9 +1,49 @@
 .ts-header-login {
-    border: 1px solid black;
     height: 100%;
     width: 33.33%;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
-    gap: 5px;
+}
+
+.ts-header-login-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    gap: 5px
+}
+
+.ts-header-login-wrapper>button:nth-of-type(1) {
+    height: 100%;
+    width: 100%;
+}
+
+.ts-header-login-wrapper>button:nth-of-type(2) {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/*  -----------------------------------------------------------------------------------  */
+/*  ------------------- @MEDIA FOR RESPONSIVENESS AND ADAPTIVE STYLES  ----------------  */
+/*  -----------------------------------------------------------------------------------  */
+
+@media screen and (max-width:975px) {
+    .ts-header-login-wrapper {
+        width: 100%;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .ts-header-login-wrapper>button:nth-of-type(1) {
+        width: 50%;
+    }
+
+    .ts-header-login-wrapper>button:nth-of-type(2) {
+        width: 50%;
+    }
+
 }

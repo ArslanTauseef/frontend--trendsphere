@@ -70,7 +70,12 @@ export const Header = () => {
           <div className="slider" style={sliderStyle}></div>
         </section>
 
-        <section className="ts-header-login">login section</section>
+        <section className="ts-header-login">
+          <div className="ts-header-login-wrapper">
+            <button>Login</button>
+            <button>Sign up</button>
+          </div>
+        </section>
       </nav>
     </header>
   );

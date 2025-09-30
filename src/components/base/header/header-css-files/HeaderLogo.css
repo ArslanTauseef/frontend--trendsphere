@@ -1,5 +1,4 @@
 .ts-header-logo {
-    border: 1px solid black;
     height: 100%;
     width: 33.33%;
     display: flex;
@@ -107,8 +106,7 @@
 /*  -----------------------------------------------------------------------------------  */
 
 @media screen and (max-width: 1075px) {
-    .ts-header-logo-wrapper {
-    }
+
 
     #ts-header-logo-text-wrapper {
         width: 130px;
