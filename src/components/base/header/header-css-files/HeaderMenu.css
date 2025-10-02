@@ -5,13 +5,13 @@
     align-items: center;
     gap: 20px;
     position: relative;
+    width: 219.271px;
 }
 
 
 
 
 .ts-header-menu>.ts-menu {
-    border-radius: 5px;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -33,10 +33,7 @@
 
 
 @media screen and (max-width:975px) {
-    .ts-header-menu {
-        gap: 3px;
-        justify-content: space-around
-    }
+
 
 
 }

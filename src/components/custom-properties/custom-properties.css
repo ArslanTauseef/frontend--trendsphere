@@ -19,13 +19,13 @@
     Fixed widths and heights for most main components will be defined here as well.
     */
     --containers-max-width: 90%; /* one width to rule them all :D */
-    --page-max-height: 100%; /* one height to rule them all :D */
+    --page-max-height: 100vh; /* one height to rule them all :D */
 
 
     /* ---------------------------------------------------------------------------- */
 
 
     /** Header component **/
-    --ts-header-height: 15vh;
+    --ts-header-height: 15vh; /* TrendSphere header height */
 
 }
