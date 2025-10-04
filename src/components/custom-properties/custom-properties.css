@@ -7,10 +7,10 @@
 
     */
     --base-bg-color:#ffffff;
-    --primary-hd-color: #000401; /* Jet Black */
+    --primary-hd-color: #000000; /* Jet Black */
     --secondary-subhd-color: #4E545C; /* Gun metal grey */
     --tertiary-text-color: #8D9797; /* Pewter */
-
+    --test--:linear-gradient(180deg, rgba(0, 0, 0, 1) 74%, rgba(80, 80, 80, 1) 100%, rgba(103, 103, 103, 1) 100%);
 
     /* ---------------------------------------------------------------------------- */
 

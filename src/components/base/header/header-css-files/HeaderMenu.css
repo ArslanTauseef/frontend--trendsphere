@@ -20,7 +20,7 @@
 
 .slider {
     position: absolute;
-    bottom: 6px;
+    bottom: 25px;
     left: 0;
     height: 2px;
     background: var(--secondary-subhd-color);
