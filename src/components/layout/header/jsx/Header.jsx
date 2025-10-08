@@ -5,11 +5,17 @@ import "../styles/header-logo/HeaderLogo.css";
 import "../styles/header-menu/HeaderMenu.css";
 import "../styles/header-nav/HeaderNav.css";
 import { IoLogoSlack } from "react-icons/io5";
+import { NavLink } from "react-router-dom";
 
 export const Header = () => {
   const [sliderStyle, setSliderStyle] = useState({});
   const navPrimus = useRef(null);
   const navSecundus = useRef([]);
+  const links = [
+    { name: "HOME", path: "/home" },
+    { name: "CONTACT", path: "/contact" },
+    { name: "ABOUT", path: "/about" },
+  ];
 
   const handleClick = (index) => {
     const target = navSecundus.current[index];
@@ -55,18 +61,19 @@ export const Header = () => {
           </div>
         </section>
         <section className="ts-header-menu" ref={navPrimus}>
-          {["HOME", "CONTACT", "ABOUT"].map((item, index) => {
-            return (
-              <div
-                className="ts-menu"
-                key={index}
-                ref={(el) => (navSecundus.current[index] = el)}
-                onClick={() => handleClick(index)}
-              >
-                {item}
-              </div>
-            );
-          })}
+          {links.map((item, index) => (
+            <NavLink
+              key={index}
+              to={item.path}
+              className={({ isActive }) =>
+                `ts-menu ${isActive ? "active" : ""}`
+              }
+              ref={(el) => (navSecundus.current[index] = el)}
+              onClick={() => handleClick(index)}
+            >
+              {item.name}
+            </NavLink>
+          ))}
           <div className="slider" style={sliderStyle}></div>
         </section>
 
