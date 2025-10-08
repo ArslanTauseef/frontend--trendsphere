@@ -1,9 +1,9 @@
-import { useState, useRef, useEffect, useLayoutEffect } from "react";
-import "../header-css-files/Header.css";
-import "../header-css-files/HeaderLogin.css";
-import "../header-css-files/HeaderLogo.css";
-import "../header-css-files/HeaderMenu.css";
-import "../header-css-files/HeaderNav.css";
+import { useState, useRef, useEffect } from "react";
+import "../styles/header-global/HeaderGlobal.css";
+import "../styles/header-login/HeaderLogin.css";
+import "../styles/header-logo/HeaderLogo.css";
+import "../styles/header-menu/HeaderMenu.css";
+import "../styles/header-nav/HeaderNav.css";
 import { IoLogoSlack } from "react-icons/io5";
 
 export const Header = () => {
@@ -37,7 +37,7 @@ export const Header = () => {
   }, []);
 
   useEffect(() => {
-    console.log("navPrimus:", navPrimus.current); // whole <section>
+    console.log("navPrimus:", navPrimus.current); // whole <section>.
     console.log("navSecundus:", navSecundus.current); // array of divs
   }, []);
   return (
