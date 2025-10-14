@@ -8,6 +8,7 @@ import {
 import { About } from "./components/routes/about/jsx/About.jsx";
 import { Contact } from "./components/routes/contact/jsx/Contact.jsx";
 import { Home } from "./components/routes/home/jsx/Home.jsx";
+import { Login } from "./components/pages/login/jsx/Login.jsx";
 
 const router = routerArray([
   {
@@ -18,6 +19,7 @@ const router = routerArray([
       { path: "home", element: <Home /> },
       { path: "contact", element: <Contact /> },
       { path: "about", element: <About /> },
+      { path: "login", element: <Login /> },
     ],
   },
 ]);

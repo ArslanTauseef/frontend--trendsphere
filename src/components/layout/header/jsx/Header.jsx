@@ -79,8 +79,12 @@ export const Header = () => {
 
         <section className="ts-header-login">
           <div className="ts-header-login-wrapper">
-            <button>Login</button>
-            <button>Sign up</button>
+            <NavLink to="/login" id="NavLink-login">
+              <button>Login</button>
+            </NavLink>
+            <NavLink to="/signup" id="NavLink-signup">
+              <button>Sign up</button>
+            </NavLink>
           </div>
         </section>
       </nav>
