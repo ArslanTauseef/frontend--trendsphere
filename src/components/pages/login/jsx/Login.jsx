@@ -16,7 +16,7 @@ export const Login = () => {
                 <input type="text" />
               </div>
               <button>Login</button>
-            </form>
+            </form> {/* Sign In Form */}
           </div>
           <div className="ts-form-container sign-up">
             <form action="">
