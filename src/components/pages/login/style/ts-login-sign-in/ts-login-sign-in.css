@@ -1,0 +1,22 @@
+.ts-form-container.sign-in {
+    left: 0;
+    z-index: 1;
+}
+
+
+.ts-form-container.sign-in form {
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.ts-form-container.sign-in>form>div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.ts-form-container.sign-in>form>div>input {
+    width: 100%;
+    height: 40px;   
+}

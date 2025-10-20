@@ -1,9 +1,14 @@
-import "./../style/ts-login.css";
+import "./../style/ts-login/ts-login.css";
+import "./../style/ts-login-sign-in/ts-login-sign-in.css";
+import "./../style/ts-login-sign-up/ts-login-sign-up.css";
 
 export const Login = () => {
   return (
+    // This is background section
     <section className="ts-login-main-background">
+      {/* This is first border glassy container */}
       <div className="ts-login-bordered-container">
+        {/* This is what is holding the form elements */}
         <div className="ts-login-main-container">
           <div className="ts-form-container sign-in">
             <form action="">
@@ -16,7 +21,7 @@ export const Login = () => {
                 <input type="text" />
               </div>
               <button>Login</button>
-            </form> {/* Sign In Form */}
+            </form>
           </div>
           <div className="ts-form-container sign-up">
             <form action="">

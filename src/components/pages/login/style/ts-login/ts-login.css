@@ -33,5 +33,38 @@
     overflow: hidden;
     border-radius: 16px;
     background-color: turquoise;
-    padding: 10px;
+}
+
+
+.ts-form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background-color: rgb(228, 226, 226);
+
+}
+
+
+.ts-form-container > form {
+    display: grid;
+    justify-content: stretch;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+}
+
+.ts-form-container > form > div {
+    position: relative;
+}
+
+
+.ts-form-container > form > div > label {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
