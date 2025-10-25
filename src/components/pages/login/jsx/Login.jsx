@@ -20,7 +20,9 @@ export const Login = () => {
                 <label htmlFor="">Password</label>
                 <input type="text" />
               </div>
-              <button>Login</button>
+              <div>
+                <button>Login</button>
+              </div>
             </form>
           </div>
           <div className="ts-form-container sign-up">
@@ -45,7 +47,9 @@ export const Login = () => {
                 <label htmlFor="">Confirm Password</label>
                 <input type="text" />
               </div>
-              <button>Sign Up</button>
+              <div>
+                <button>Login</button>
+              </div>
             </form>
           </div>
         </div>
