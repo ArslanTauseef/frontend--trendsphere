@@ -10,6 +10,7 @@ export const Login = () => {
       <div className="ts-login-bordered-container">
         {/* This is what is holding the form elements */}
         <div className="ts-login-main-container">
+          {/* Registration form */}
           <div className="ts-form-container sign-in">
             <form action="">
               <div>
@@ -52,6 +53,9 @@ export const Login = () => {
               </div>
             </form>
           </div>
+
+          {/* Overlay */}
+          <div className="ts-login-overlay-container"></div>
         </div>
       </div>
     </section>

@@ -1,32 +1,30 @@
 .ts-form-container.sign-up {
-    right: 0;
+    left: 0;
     z-index: 0;
 }
 
 .ts-form-container.sign-up form {
-    grid-template-rows: repeat(3, 0.1fr);
+    grid-template-rows: repeat(6, 0.1fr);
     align-content: center;
     gap: 20px;
 }
 
 .ts-form-container.sign-up>form>div {
-    width: 100%;
+    width: 70%; /**/
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     justify-content: center;
 }
 /*  */
-.ts-form-container.sign-up>form>div>input {
-    width: 100%;
-    height: 40px;
-}
 
 .ts-form-container.sign-up>form>div>input {
     width: 100%;
     height: 40px;
     border: none;
-    border-radius: 05px;
-    -webkit-box-shadow: 0px 1px 7px 1px rgba(0, 0, 0, 0.92);
-    box-shadow: 0px 1px 7px 1px rgba(0, 0, 0, 0.92);
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.18);
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.18);
+    outline: none;
 }
+
+
