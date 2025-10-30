@@ -56,13 +56,19 @@ export const Login = () => {
               </div>
             </form>
           </div>
+          {/* 
+          ////////////////////
+          
+          SEPERATOR
 
+          ////////////////////
+          */}
           {/* Overlay */}
           <div className="ts-login-overlay-container">
             <div className="ts-shadow-overlay">
               {/* OVERLAY PANEL LEFT */}
 
-              <div className="ts-overlay-panel ts-panel-left">
+              <div className="ts-overlay-panels ts-panel-left">
                 <h1>Hello...</h1>
                 <h3>Already signed up?</h3>
                 <p>Click Login to get redirected to login session.</p>
@@ -71,7 +77,7 @@ export const Login = () => {
                 </div>
               </div>
               {/* OVERLAY PANEL RIGHT */}
-              <div className="ts-overlay-panel ts-panel-right">
+              <div className="ts-overlay-panels ts-panel-right">
                 <h1>Hello...</h1>
                 <h3>Haven't signed up yet?</h3>
                 <p>Head to sign up form by clicking the button below.</p>
