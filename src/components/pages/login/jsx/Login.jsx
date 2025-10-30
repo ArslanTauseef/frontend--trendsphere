@@ -1,6 +1,9 @@
-import "./../style/ts-login/ts-login.css";
-import "./../style/ts-login-sign-in/ts-login-sign-in.css";
-import "./../style/ts-login-sign-up/ts-login-sign-up.css";
+import "./../style/ts-login-window/ts-login/ts-login.css";
+import "./../style/ts-login-window/ts-login-sign-in/ts-login-sign-in.css";
+import "./../style/ts-login-window/ts-login-sign-up/ts-login-sign-up.css";
+import "./../style/ts-login-overlay/ts-overlay/ts-overlay.css";
+import "./../style/ts-login-overlay/ts-overlay-left/ts-overlay-left.css";
+import "./../style/ts-login-overlay/ts-overlay-right/ts-overlay-right.css";
 
 export const Login = () => {
   return (
@@ -55,7 +58,29 @@ export const Login = () => {
           </div>
 
           {/* Overlay */}
-          <div className="ts-login-overlay-container"></div>
+          <div className="ts-login-overlay-container">
+            <div className="ts-shadow-overlay">
+              {/* OVERLAY PANEL LEFT */}
+
+              <div className="ts-overlay-panel ts-panel-left">
+                <h1>Hello...</h1>
+                <h3>Already signed up?</h3>
+                <p>Click Login to get redirected to login session.</p>
+                <div>
+                  <button>Sign Up</button>
+                </div>
+              </div>
+              {/* OVERLAY PANEL RIGHT */}
+              <div className="ts-overlay-panel ts-panel-right">
+                <h1>Hello...</h1>
+                <h3>Haven't signed up yet?</h3>
+                <p>Head to sign up form by clicking the button below.</p>
+                <div>
+                  <button>Sign Up</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
