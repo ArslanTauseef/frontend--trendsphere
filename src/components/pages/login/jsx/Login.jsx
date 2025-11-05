@@ -4,8 +4,15 @@ import "./../style/ts-login-window/ts-login-sign-up/ts-login-sign-up.css";
 import "./../style/ts-login-overlay/ts-overlay/ts-overlay.css";
 import "./../style/ts-login-overlay/ts-overlay-left/ts-overlay-left.css";
 import "./../style/ts-login-overlay/ts-overlay-right/ts-overlay-right.css";
+import { useState } from "react";
 
 export const Login = () => {
+  const [overlaySignUp, setOverlaySignUp] = useState(false);
+
+  const handleOverLaySignUp = () => {
+    setOverlaySignUp(true);
+  }
+
   return (
     // This is background section
     <section className="ts-login-main-background">
@@ -73,7 +80,7 @@ export const Login = () => {
                 <h3>Already signed up?</h3>
                 <p>Click Login to get redirected to login session.</p>
                 <div>
-                  <button>Sign Up</button>
+                  <button onClick={handleOverLaySignUp}>Sign Up</button>
                 </div>
               </div>
               {/* OVERLAY PANEL RIGHT */}
