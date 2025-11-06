@@ -4,14 +4,18 @@ import "./../style/ts-login-window/ts-login-sign-up/ts-login-sign-up.css";
 import "./../style/ts-login-overlay/ts-overlay/ts-overlay.css";
 import "./../style/ts-login-overlay/ts-overlay-left/ts-overlay-left.css";
 import "./../style/ts-login-overlay/ts-overlay-right/ts-overlay-right.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export const Login = () => {
   const [overlaySignUp, setOverlaySignUp] = useState(false);
 
   const handleOverLaySignUp = () => {
-    setOverlaySignUp(true);
-  }
+    setOverlaySignUp((prev) => !prev);
+    console.log("Overlay state changed:", overlaySignUp);
+  };
+
+  useEffect(() => {
+  }, [overlaySignUp]);
 
   return (
     // This is background section
@@ -71,16 +75,16 @@ export const Login = () => {
           ////////////////////
           */}
           {/* Overlay */}
-          <div className="ts-login-overlay-container">
-            <div className="ts-shadow-overlay">
+          <div className={overlaySignUp? "ts-login-overlay-container ts-login-overlay-container-shift" : "ts-login-overlay-container"}>
+            <div className={overlaySignUp? "ts-shadow-overlay ts-shadow-overlay-shift": "ts-shadow-overlay"}>
               {/* OVERLAY PANEL LEFT */}
 
               <div className="ts-overlay-panels ts-panel-left">
                 <h1>Hello...</h1>
-                <h3>Already signed up?</h3>
-                <p>Click Login to get redirected to login session.</p>
+                <h3>Wanna Sign In?</h3>
+                <p>Click Sign In to get redirected to login session.</p>
                 <div>
-                  <button onClick={handleOverLaySignUp}>Sign Up</button>
+                  <button onClick={handleOverLaySignUp} >Sign In</button>
                 </div>
               </div>
               {/* OVERLAY PANEL RIGHT */}
@@ -89,7 +93,7 @@ export const Login = () => {
                 <h3>Haven't signed up yet?</h3>
                 <p>Head to sign up form by clicking the button below.</p>
                 <div>
-                  <button>Sign Up</button>
+                  <button onClick={handleOverLaySignUp}>Sign Up</button>
                 </div>
               </div>
             </div>
