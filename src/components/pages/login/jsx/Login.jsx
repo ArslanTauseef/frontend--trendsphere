@@ -81,17 +81,17 @@ export const Login = () => {
 
               <div className="ts-overlay-panels ts-panel-left">
                 <h1>Hello...</h1>
-                <h3>Wanna Sign In?</h3>
-                <p>Click Sign In to get redirected to login session.</p>
+                <h3>Already have an account?</h3>
+                <p>Click <strong>Sign In</strong> to switch to the login form.</p>
                 <div>
-                  <button onClick={handleOverLaySignUp} >Sign In</button>
+                  <button onClick={handleOverLaySignUp}>Sign In</button>
                 </div>
               </div>
               {/* OVERLAY PANEL RIGHT */}
               <div className="ts-overlay-panels ts-panel-right">
                 <h1>Hello...</h1>
                 <h3>Haven't signed up yet?</h3>
-                <p>Head to sign up form by clicking the button below.</p>
+                <p>Head to <strong>Sign Up</strong> form by clicking the button below.</p>
                 <div>
                   <button onClick={handleOverLaySignUp}>Sign Up</button>
                 </div>
