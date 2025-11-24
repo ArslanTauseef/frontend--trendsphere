@@ -25,7 +25,7 @@ export const Login = () => {
         {/* This is what is holding the form elements */}
         <div className="ts-login-main-container">
           {/* Registration form */}
-          <div className="ts-form-container sign-in">
+          <div className={overlaySignUp? "ts-form-container sign-in ts-form-container-shift" : "ts-form-container sign-in" }>
             <form action="">
               <div>
                 <label htmlFor="">User name</label>
@@ -40,7 +40,7 @@ export const Login = () => {
               </div>
             </form>
           </div>
-          <div className="ts-form-container sign-up">
+          <div className={overlaySignUp? "ts-form-container sign-up ts-form-container-shift" : "ts-form-container sign-up"}>
             <form action="">
               <div>
                 <label htmlFor="">First name</label>

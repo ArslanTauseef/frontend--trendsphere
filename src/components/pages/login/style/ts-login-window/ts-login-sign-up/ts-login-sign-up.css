@@ -27,4 +27,13 @@
     outline: none;
 }
 
+.ts-form-container-shift {
+    transform: translateX(100%); /* moves to the right side */
+    transition: all 0.6s ease-in-out;
+}
 
+
+.ts-form-container.sign-up.ts-form-container-shift  {
+    transition: all 0.6s ease-in-out;
+    z-index: 1;
+}
