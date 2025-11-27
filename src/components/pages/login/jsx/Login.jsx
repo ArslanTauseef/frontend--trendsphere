@@ -79,7 +79,7 @@ export const Login = () => {
             <div className={overlaySignUp? "ts-shadow-overlay ts-shadow-overlay-shift": "ts-shadow-overlay"}>
               {/* OVERLAY PANEL LEFT */}
 
-              <div className="ts-overlay-panels ts-panel-left">
+              <div className={overlaySignUp? "ts-overlay-panels ts-panel-left ts-shift-left-panel" : "ts-overlay-panels ts-panel-left"}>
                 <h1>Hello...</h1>
                 <h3>Already have an account?</h3>
                 <p>Click <strong>Sign In</strong> to switch to the login form.</p>
@@ -88,7 +88,7 @@ export const Login = () => {
                 </div>
               </div>
               {/* OVERLAY PANEL RIGHT */}
-              <div className="ts-overlay-panels ts-panel-right">
+              <div className={overlaySignUp? "ts-overlay-panels ts-panel-right ts-shift-right-panel" : "ts-overlay-panels ts-panel-right" }>
                 <h1>Hello...</h1>
                 <h3>Haven't signed up yet?</h3>
                 <p>Head to <strong>Sign Up</strong> form by clicking the button below.</p>

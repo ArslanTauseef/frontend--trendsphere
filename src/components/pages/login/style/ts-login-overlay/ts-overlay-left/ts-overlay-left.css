@@ -1,7 +1,11 @@
 .ts-panel-left {
     left: 0;
+    transform: translateX(-45%);
 }
 
-.ts-panel-right {
-    right: 0;
+
+
+.ts-panel-left.ts-shift-left-panel {
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
 }
