@@ -4,6 +4,7 @@ import "./../style/ts-login-window/ts-login-sign-up/ts-login-sign-up.css";
 import "./../style/ts-login-overlay/ts-overlay/ts-overlay.css";
 import "./../style/ts-login-overlay/ts-overlay-left/ts-overlay-left.css";
 import "./../style/ts-login-overlay/ts-overlay-right/ts-overlay-right.css";
+import { BlackButton } from "./../../../ui/custom-buttons/black-button/BlackButton.jsx";
 import { useState, useEffect } from "react";
 
 export const Login = () => {
@@ -93,6 +94,7 @@ export const Login = () => {
                 <h3>Haven't signed up yet?</h3>
                 <p>Head to <strong>Sign Up</strong> form by clicking the button below.</p>
                 <div>
+                  <BlackButton variant={"black"}>Hello Button</BlackButton>
                   <button onClick={handleOverLaySignUp}>Sign Up</button>
                 </div>
               </div>

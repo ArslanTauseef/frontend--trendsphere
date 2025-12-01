@@ -1,0 +1,19 @@
+.custom-btn {
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    transition: 0.2s ease;
+    font-weight: 500;
+}
+
+/* Black button (Login) */
+.custom-btn.black {
+    background-color: black;
+    color: white;
+}
+
+.custom-btn.black:hover {
+    background-color: #c71e1e;
+}
